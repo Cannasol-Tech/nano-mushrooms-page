@@ -1,0 +1,8 @@
+# Robots.txt for Cannasol Technologies - Nano Mushrooms Landing Page
+# https://enjoynano.com/mushrooms
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://enjoynano.com/sitemap.xml
