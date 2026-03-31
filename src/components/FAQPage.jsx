@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import themesConfig from '../theme/themes';
 
-// Theme configuration - matches KavaLandingPage
+// Theme configuration
 const themes = themesConfig;
 
 // FAQ Data organized by category
@@ -30,61 +30,60 @@ const faqCategories = [
     icon: FlaskConical,
     faqs: [
       {
-        question: 'What is nano Kava?',
-        answer: 'Nano Kava is a nanoemulsified form of Kava extract where particles are reduced to approximately 18 nanometers in size. This is achieved through our proprietary NanoOptimizer\u2122 surfactant system and ultrasonic processing technology. The ultra-small particle size dramatically increases bioavailability (up to 10x compared to traditional Kava) and reduces onset time to just 5 minutes.'
+        question: 'What are nanoemulsified mushroom extracts?',
+        answer: 'Our nanoemulsified mushroom extracts use ultrasonic processing to reduce functional mushroom particles to nanometer scale. This dramatically increases the surface area available for absorption, enabling faster uptake pathways and more consistent dosing compared to traditional mushroom powders or tinctures.'
       },
       {
-        question: 'What makes Cannasol\'s ~18nm particle size special?',
-        answer: 'Our ~18nm particle size is the smallest in the industry\u2014no competitor has achieved this. Smaller particles mean: (1) Faster absorption through cell membranes, (2) Higher bioavailability of kavalactones, (3) Crystal-clear formulations with no cloudiness, and (4) Better shelf stability with no separation. We achieve this through our partnership with QSonica, the #1 ultrasonic liquid processing equipment manufacturer.'
+        question: 'Which mushroom varieties do you offer?',
+        answer: 'We currently offer three flagship nanoemulsified extracts: (1) Lion\'s Mane — optimized for focus and cognitive clarity, (2) Reishi — formulated for calm and daily balance, and (3) Cordyceps — engineered for performance and natural energy. Each extract is processed to achieve consistent particle size and dispersion.'
       },
       {
-        question: 'How does nano Kava compare to traditional Kava extract?',
-        answer: 'Traditional Kava extracts are hydrophobic (water-fearing), poorly absorbed, and take 30-45 minutes to feel effects. Only 10-15% of kavalactones are typically absorbed. Our nano Kava is water-soluble, absorbs in minutes, and delivers 80-90% kavalactone absorption. The result: faster onset, stronger effects at lower doses, and better-tasting products.'
+        question: 'How does nanoemulsification improve mushroom extracts?',
+        answer: 'Traditional mushroom extracts are poorly water-soluble and inconsistent in absorption. Nanoemulsification encapsulates active compounds in ultra-small droplets that disperse uniformly in water-based formulations. The result: faster uptake, more predictable consumer experience, and clean integration into beverages without cloudiness or settling.'
       },
       {
-        question: 'What is the NanoOptimizer\u2122 surfactant system?',
-        answer: 'NanoOptimizer\u2122 is our proprietary blend of food-grade surfactants that encapsulate Kava particles, making them water-soluble and stable. This system prevents particle re-aggregation, ensures consistent dosing, and allows the nano Kava to remain suspended indefinitely without separation or settling.'
+        question: 'What processing technology do you use?',
+        answer: 'We use proprietary ultrasonic liquid processing equipment in partnership with QSonica, the leading manufacturer of ultrasonic processors. Combined with our food-grade surfactant system, this achieves stable nanoemulsions with consistent particle size distribution across production runs.'
       }
     ]
   },
-
   {
-    title: 'Effects & Dosing',
+    title: 'Benefits & Applications',
     icon: Droplets,
     faqs: [
       {
-        question: 'How fast does nano Kava work?',
-        answer: 'Most users report feeling effects within 5 minutes of consumption, compared to 30-45 minutes for traditional Kava. This rapid onset is due to the ultra-small particle size allowing for immediate absorption through the oral mucosa and GI tract.'
+        question: 'What are the benefits of each mushroom extract?',
+        answer: 'Lion\'s Mane supports cognitive function, focus, and mental clarity — ideal for nootropic and productivity-focused products. Reishi promotes relaxation, stress adaptation, and immune support — perfect for wellness and wind-down beverages. Cordyceps supports natural energy, endurance, and performance — great for pre-workout and active lifestyle products.'
       },
       {
-        question: 'What dosage should I use in my products?',
-        answer: 'Dosing depends on your target effects and product format. We recommend starting with 50-100mg of kavalactones per serving for mild relaxation, 100-200mg for moderate effects, and 200-300mg for stronger effects. Because of the increased bioavailability, you may need less nano Kava than traditional extracts to achieve the same effects. We work directly with each client to dial in the perfect dosage for your specific product.'
+        question: 'How quickly do consumers notice effects?',
+        answer: 'Because nanoemulsification supports faster uptake pathways compared to traditional mushroom supplements, consumers may notice effects more quickly. Onset timing varies by individual, product format, and serving size. We work with each client to optimize dosing for their target consumer experience.'
       },
       {
-        question: 'Is nano Kava safe?',
-        answer: 'Kava has been consumed safely for thousands of years in Pacific Island cultures. Our nano Kava uses the same kavalactones, just in a more bioavailable form. We use only noble Kava varieties and test for purity and potency. As with any supplement, we recommend following standard Kava safety guidelines and consulting with regulatory experts for your specific market.'
+        question: 'Can I combine multiple mushroom extracts in one product?',
+        answer: 'Yes. Our nanoemulsified extracts are designed to be stackable. Many formulation teams blend Lion\'s Mane with Cordyceps for a focus-plus-energy profile, or combine all three for a comprehensive functional mushroom product. We can help you dial in ratios for your target use case.'
       }
     ]
   },
   {
-    title: 'Formulation & Applications',
+    title: 'Formulation & Integration',
     icon: Beaker,
     faqs: [
       {
-        question: 'What products can I make with nano Kava?',
-        answer: 'Our nano Kava is ideal for: Kava seltzers and sparkling beverages, functional shots and elixirs, RTD (ready-to-drink) relaxation beverages, wellness tonics, mocktails and alcohol alternatives\u2014plus any water-based formulation where you need fast-acting, great-tasting Kava.'
+        question: 'What product formats work with your mushroom extracts?',
+        answer: 'Our nanoemulsified mushroom extracts integrate smoothly into: functional beverages and sparkling waters, RTD (ready-to-drink) wellness shots, coffee and tea blends, smoothie and juice products, energy drinks, and any water-based formulation requiring consistent mushroom actives.'
       },
       {
-        question: 'Will nano Kava make my beverage cloudy?',
-        answer: 'No! One of the key benefits of our ~18nm particle size is crystal-clear formulations. Traditional Kava extracts create cloudy, unappealing beverages. Our nano Kava stays perfectly clear and stable, giving your products a premium, professional appearance.'
+        question: 'Will nanoemulsified mushrooms affect my beverage\'s clarity?',
+        answer: 'Our processing achieves particle sizes small enough to maintain clear or near-clear formulations depending on concentration. Traditional mushroom powders create cloudy, gritty beverages. Our nanoemulsions stay uniformly dispersed with no settling, giving your products a clean, premium appearance.'
       },
       {
-        question: 'Does nano Kava taste bitter like traditional Kava?',
-        answer: 'Our nano Kava has a significantly reduced bitter taste compared to traditional extracts. Additionally, we offer bitter blocker bundles\u2014proprietary flavor-masking ingredients that can virtually eliminate any remaining Kava taste. This allows you to create smooth, palatable products your customers will actually enjoy drinking.'
+        question: 'How do your extracts taste?',
+        answer: 'Nanoemulsification significantly reduces the earthy, bitter taste associated with traditional mushroom extracts. The flavor profile is mild enough to work in most beverage formulations with standard flavoring. We can also advise on flavor-masking strategies for more sensitive palates.'
       },
       {
-        question: 'How stable is nano Kava in beverages?',
-        answer: 'Our nano Kava emulsion is highly stable with a shelf life of 12+ months when stored properly. The NanoOptimizer\u2122 system prevents particle re-aggregation, so there\'s no separation, settling, or "ring around the bottle." Your products will look as good on day 365 as they did on day 1.'
+        question: 'What is the shelf stability of your emulsions?',
+        answer: 'Our nanoemulsified mushroom extracts offer 12+ months of shelf stability when stored properly. The emulsion system prevents particle re-aggregation, so there\'s no separation, settling, or sedimentation over time. Your products maintain consistent appearance and dosing throughout their shelf life.'
       }
     ]
   },
@@ -96,21 +95,21 @@ const faqCategories = [
         question: 'What is the minimum order quantity?',
         answer: (
           <>
-            We work with brands of all sizes, from startups to established beverage companies. Minimum order quantities vary based on your needs. <Link to="/contact" className="text-emerald-400 hover:text-emerald-300 transition-colors underline">Contact us</Link> directly to discuss your specific requirements\u2014we're flexible and want to help you succeed.
+            We work with brands of all sizes, from startups to established beverage companies. Minimum order quantities vary based on your needs and extract type. <Link to="/contact" className="text-emerald-400 hover:text-emerald-300 transition-colors underline">Contact our sales team</Link> to discuss your specific requirements — we are flexible and want to help you succeed.
           </>
         )
       },
       {
         question: 'Can I get samples before ordering?',
-        answer: 'Absolutely! We encourage all potential partners to test our nano Kava in their formulations before committing to an order. Contact us to request samples and we\'ll get them shipped to you promptly.'
+        answer: 'Absolutely. We encourage all potential partners to evaluate our nanoemulsified mushroom extracts in their formulations before committing to an order. Contact us to request samples of any or all three extracts and we\'ll get them shipped to you promptly.'
       },
       {
         question: 'What\'s the process to get started?',
-        answer: 'Getting started is simple: (1) Schedule a discovery call with Josh to discuss your product vision, (2) Receive samples to test in your formulations, (3) Work with us to refine your product and dial in the perfect dosage, (4) Place your order and scale production. Josh works directly with every client to ensure your success.'
+        answer: 'Getting started is straightforward: (1) Schedule a discovery call to discuss your product vision and target market, (2) Receive samples to test in your formulations, (3) Work with our team to refine dosing and integration, (4) Place your order and scale production. We work directly with every client to ensure your formulation succeeds.'
       },
       {
         question: 'Do you offer white-label or private-label services?',
-        answer: 'We primarily supply nano Kava as a bulk ingredient for your own branded products. We don\'t currently offer finished product manufacturing, but we can recommend trusted co-packers and formulators if needed.'
+        answer: 'We primarily supply nanoemulsified mushroom extracts as bulk ingredients for your own branded products. We don\'t currently offer finished product manufacturing, but we can recommend trusted co-packers and formulators who have experience working with our ingredients.'
       }
     ]
   },
@@ -120,15 +119,15 @@ const faqCategories = [
     faqs: [
       {
         question: 'What quality certifications do you have?',
-        answer: 'We maintain strict quality control standards and can provide Certificates of Analysis (COA) for all batches. Our facility follows GMP (Good Manufacturing Practice) guidelines. We test for potency, purity, heavy metals, and microbial contamination.'
+        answer: 'We maintain strict quality control standards and provide Certificates of Analysis (COA) for all batches. Our facility follows GMP (Good Manufacturing Practice) guidelines. Every batch is tested for potency, purity, heavy metals, and microbial contamination to ensure consistent, safe ingredients.'
       },
       {
-        question: 'Is your Kava sourced from noble varieties?',
-        answer: 'Yes, we exclusively use noble Kava varieties, which are the traditional, safe varieties that have been consumed for centuries. We never use tudei (two-day) Kava or other non-noble varieties that have been associated with adverse effects.'
+        question: 'Where are your mushrooms sourced?',
+        answer: 'We source our functional mushroom raw materials from verified, quality-controlled suppliers who specialize in Lion\'s Mane, Reishi, and Cordyceps cultivation. All source materials are tested for identity, purity, and contaminants before processing. We can provide full traceability documentation upon request.'
       },
       {
         question: 'Can you provide documentation for regulatory compliance?',
-        answer: 'Yes, we provide full documentation including COAs, specifications sheets, and safety data. We can work with your regulatory team to ensure you have everything needed for compliance in your target markets.'
+        answer: 'Yes. We provide full documentation including COAs, specification sheets, allergen statements, and safety data for each extract. We can work with your regulatory team to ensure you have everything needed for compliance in your target markets.'
       }
     ]
   }
@@ -232,12 +231,12 @@ export default function FAQPage() {
   return (
     <div className={`min-h-screen ${theme.text} transition-colors duration-500`}>
       <Helmet>
-        <title>Nano Kava FAQ | Kavalactone Questions Answered — EnjoyNano</title>
-        <meta name="description" content="Frequently asked questions about nano kava, kavalactones, nano-emulsified kava technology, dosing, safety, and bioavailability benefits." />
-        <link rel="canonical" href="https://enjoynano.com/faq" />
-        <meta property="og:title" content="Nano Kava FAQ — Kavalactone Questions Answered" />
-        <meta property="og:description" content="Get answers about nano kava, kavalactones, dosing, safety, and nano-emulsified kava benefits." />
-        <meta property="og:url" content="https://enjoynano.com/faq" />
+        <title>Nano Mushroom FAQ | Nanoemulsified Functional Mushroom Questions — EnjoyNano</title>
+        <meta name="description" content="Frequently asked questions about nanoemulsified mushroom extracts — Lion's Mane, Reishi, and Cordyceps — technology, formulation, dosing, and B2B partnership." />
+        <link rel="canonical" href="https://nano-mushrooms-page.web.app/faq" />
+        <meta property="og:title" content="Nano Mushroom FAQ — Functional Mushroom Questions Answered" />
+        <meta property="og:description" content="Get answers about nanoemulsified mushroom extracts, formulation integration, dosing, and partnership opportunities." />
+        <meta property="og:url" content="https://nano-mushrooms-page.web.app/faq" />
       </Helmet>
 
       {/* Navigation */}
@@ -297,10 +296,10 @@ export default function FAQPage() {
             <h1 className={`text-4xl md:text-6xl font-bold mb-6 ${theme.text}`}>
               Frequently Asked
               <span className={`bg-gradient-to-r ${theme.accentGradientAlt} bg-clip-text text-transparent`}> Questions</span>
-              <span className="sr-only"> — Nano Kava &amp; Kavalactones</span>
+              <span className="sr-only"> — Nanoemulsified Functional Mushrooms</span>
             </h1>
             <p className={`text-xl ${theme.textSecondary} max-w-2xl mx-auto`}>
-              Everything you need to know about our nano Kava emulsion, formulation, ordering, and partnership opportunities.
+              Everything you need to know about our nanoemulsified mushroom extracts, formulation integration, and partnership opportunities.
             </p>
           </motion.div>
         </div>
@@ -332,7 +331,7 @@ export default function FAQPage() {
             Still Have Questions?
           </h2>
           <p className={`${theme.textSecondary} mb-8 max-w-xl mx-auto`}>
-            Can't find what you're looking for? Josh is happy to answer any questions about our nano Kava, formulation support, or partnership opportunities.
+            Can't find what you're looking for? Our team is happy to answer any questions about our nanoemulsified mushroom extracts, formulation support, or partnership opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

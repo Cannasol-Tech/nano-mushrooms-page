@@ -18,9 +18,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 const isTest = process.env.VITEST || process.env.NODE_ENV === 'test';
+const skipPrerender = process.env.SKIP_PRERENDER === '1';
 
 async function getPrerenderPlugin() {
-  if (isTest) return null;
+  if (isTest || skipPrerender) return null;
   const vitePrerender = (await import('vite-plugin-prerender-k')).default;
   const Renderer = vitePrerender.PuppeteerRenderer;
   return vitePrerender({

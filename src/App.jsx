@@ -18,6 +18,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import AppRoutes from './AppRoutes';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { trackPageView } from './utils/gtag';
+import NanoScene from './components/NanoScene';
 import './index.css';
 
 function AppContent() {
@@ -32,9 +33,10 @@ function AppContent() {
 
   return (
     <div className="relative min-h-screen">
-      {/* Themed background layer */}
+      {/* Themed background layer with nano-mushroom animation */}
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <div className={`absolute inset-0 transition-colors duration-500 ${isDark ? 'bg-slate-950' : 'bg-gray-50'}`} />
+        <NanoScene isDark={isDark} />
       </div>
       {/* Page content */}
       <AppRoutes />
