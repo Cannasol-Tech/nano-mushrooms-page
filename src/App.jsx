@@ -47,7 +47,7 @@ function AppContent() {
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/mushrooms">
         <ThemeProvider>
           <AppContent />
         </ThemeProvider>

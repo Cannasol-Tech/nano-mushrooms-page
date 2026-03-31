@@ -26,7 +26,7 @@ async function getPrerenderPlugin() {
   const Renderer = vitePrerender.PuppeteerRenderer;
   return vitePrerender({
     staticDir: path.join(import.meta.dirname || '.', 'dist'),
-    routes: ['/', '/faq', '/contact'],
+    routes: ['/mushrooms/', '/mushrooms/faq', '/mushrooms/contact'],
     renderer: new Renderer({
       renderAfterDocumentEvent: 'app-rendered',
     }),
@@ -52,6 +52,7 @@ async function getPrerenderPlugin() {
 }
 
 export default defineConfig(async () => ({
+  base: '/mushrooms/',
   plugins: [
     react(),
     await getPrerenderPlugin(),

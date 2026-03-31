@@ -15,7 +15,7 @@ help:
 	@echo "  make dev       - Start dev server (no auto-open)"
 	@echo "  make build     - Build for production"
 	@echo "  make clean     - Remove build artifacts and node_modules"
-	@echo "  make deploy    - Build and prepare for deployment"
+	@echo "  make deploy    - Build and copy into kava site for deployment"
 	@echo ""
 
 
@@ -53,8 +53,17 @@ clean:
 	rm -rf .vite
 	@echo "Clean complete!"
 
-# Build and prepare for deployment
+KAVA_DIR = ../nano-kava-react-page
+
+# Build and copy into kava site's dist for deployment
 deploy: build
+	@echo "Copying mushrooms build into kava dist..."
+	@if [ ! -d "$(KAVA_DIR)/dist" ]; then \
+		echo "Error: $(KAVA_DIR)/dist not found. Build the kava site first."; \
+		exit 1; \
+	fi
+	rm -rf $(KAVA_DIR)/dist/mushrooms
+	cp -r dist $(KAVA_DIR)/dist/mushrooms
 	@echo ""
-	@echo "Ready for deployment!"
-	@echo "Upload the contents of ./dist/ to your hosting provider."
+	@echo "Done! Deploy from the kava repo:"
+	@echo "  cd $(KAVA_DIR) && firebase deploy"

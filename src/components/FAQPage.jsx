@@ -233,10 +233,10 @@ export default function FAQPage() {
       <Helmet>
         <title>Nano Mushroom FAQ | Nanoemulsified Functional Mushroom Questions — EnjoyNano</title>
         <meta name="description" content="Frequently asked questions about nanoemulsified mushroom extracts — Lion's Mane, Reishi, and Cordyceps — technology, formulation, dosing, and B2B partnership." />
-        <link rel="canonical" href="https://nano-mushrooms-page.web.app/faq" />
+        <link rel="canonical" href="https://enjoynano.com/mushrooms/faq" />
         <meta property="og:title" content="Nano Mushroom FAQ — Functional Mushroom Questions Answered" />
         <meta property="og:description" content="Get answers about nanoemulsified mushroom extracts, formulation integration, dosing, and partnership opportunities." />
-        <meta property="og:url" content="https://nano-mushrooms-page.web.app/faq" />
+        <meta property="og:url" content="https://enjoynano.com/mushrooms/faq" />
       </Helmet>
 
       {/* Navigation */}
