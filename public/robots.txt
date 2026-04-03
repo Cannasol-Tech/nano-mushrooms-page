@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://enjoynano.com/sitemap.xml
+Sitemap: https://enjoynano.com/mushrooms/sitemap.xml

@@ -31,7 +31,7 @@ const faqCategories = [
     faqs: [
       {
         question: 'What are nanoemulsified mushroom extracts?',
-        answer: 'Our nanoemulsified mushroom extracts use ultrasonic processing to reduce functional mushroom particles to nanometer scale. This dramatically increases the surface area available for absorption, enabling faster uptake pathways and more consistent dosing compared to traditional mushroom powders or tinctures.'
+        answer: 'Our nanoemulsified mushroom extracts use ultrasonic processing to reduce functional mushroom particles to <25 nm. This dramatically increases the surface area available for absorption, enabling faster uptake pathways and more consistent dosing compared to traditional mushroom powders or tinctures.'
       },
       {
         question: 'Which mushroom varieties do you offer?',
@@ -43,7 +43,7 @@ const faqCategories = [
       },
       {
         question: 'What processing technology do you use?',
-        answer: 'We use proprietary ultrasonic liquid processing equipment in partnership with QSonica, the leading manufacturer of ultrasonic processors. Combined with our food-grade surfactant system, this achieves stable nanoemulsions with consistent particle size distribution across production runs.'
+        answer: 'We use proprietary ultrasonic liquid processing equipment in partnership with QSonica, the leading manufacturer of ultrasonic processors. Combined with our food-grade surfactant system, this achieves stable nanoemulsions with particle sizes under 25 nm and consistent distribution across production runs.'
       }
     ]
   },
@@ -75,7 +75,7 @@ const faqCategories = [
       },
       {
         question: 'Will nanoemulsified mushrooms affect my beverage\'s clarity?',
-        answer: 'Our processing achieves particle sizes small enough to maintain clear or near-clear formulations depending on concentration. Traditional mushroom powders create cloudy, gritty beverages. Our nanoemulsions stay uniformly dispersed with no settling, giving your products a clean, premium appearance.'
+        answer: 'Our processing achieves particle sizes under 25 nm, small enough to maintain clear or near-clear formulations depending on concentration. Traditional mushroom powders create cloudy, gritty beverages. Our nanoemulsions stay uniformly dispersed with no settling, giving your products a clean, premium appearance.'
       },
       {
         question: 'How do your extracts taste?',

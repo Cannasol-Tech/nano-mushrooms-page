@@ -1,7 +1,7 @@
 # Cannasol Nano Mushrooms Landing Page - Makefile
 # ================================================
 
-.PHONY: help install preview dev build clean deploy
+.PHONY: help install preview dev build build-fast test clean deploy deploy-standalone
 
 # Default target
 help:
@@ -15,7 +15,10 @@ help:
 	@echo "  make dev       - Start dev server (no auto-open)"
 	@echo "  make build     - Build for production"
 	@echo "  make clean     - Remove build artifacts and node_modules"
+	@echo "  make build-fast - Build without prerendering (faster, no Puppeteer)"
+	@echo "  make test      - Run tests"
 	@echo "  make deploy    - Build and copy into kava site for deployment"
+	@echo "  make deploy-standalone - Build and deploy directly to Firebase"
 	@echo ""
 
 
@@ -45,6 +48,17 @@ build:
 	@echo ""
 	@echo "Build complete! Output in ./dist/"
 
+# Build without prerendering (faster, no Puppeteer)
+build-fast:
+	@echo "Building for production (no prerender)..."
+	SKIP_PRERENDER=1 npm run build
+	@echo ""
+	@echo "Build complete! Output in ./dist/"
+
+# Run tests
+test:
+	npm run test
+
 # Clean build artifacts
 clean:
 	@echo "Cleaning build artifacts..."
@@ -67,3 +81,10 @@ deploy: build
 	@echo ""
 	@echo "Done! Deploy from the kava repo:"
 	@echo "  cd $(KAVA_DIR) && firebase deploy"
+
+# Build and deploy directly to the nano-mushrooms-page Firebase project
+deploy-standalone: build
+	@echo "Deploying to Firebase (nano-mushrooms-page)..."
+	firebase deploy --project nano-mushrooms-page
+	@echo ""
+	@echo "Deployed to https://nano-mushrooms-page.web.app"
