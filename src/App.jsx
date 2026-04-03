@@ -21,10 +21,11 @@ import { trackPageView } from './utils/gtag';
 import NanoScene from './components/NanoScene';
 import './index.css';
 
-// Safari's canvas compositing is too slow for the particle animation.
+// Canvas particle animation only runs smoothly on Chrome/Chromium.
 // Detect once at module level so every render doesn't re-sniff.
-const isSafari = typeof navigator !== 'undefined'
-  && /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+const isChrome = typeof navigator !== 'undefined'
+  && /chrome|chromium/i.test(navigator.userAgent)
+  && !/edg/i.test(navigator.userAgent);
 
 function AppContent() {
   const { isDark } = useTheme();
@@ -41,7 +42,7 @@ function AppContent() {
       {/* Themed background layer with nano-mushroom animation */}
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <div className={`absolute inset-0 transition-colors duration-500 ${isDark ? 'bg-slate-950' : 'bg-gray-50'}`} />
-        {!isSafari && <NanoScene isDark={isDark} />}
+        {isChrome && <NanoScene isDark={isDark} />}
       </div>
       {/* Page content */}
       <AppRoutes />
